@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Domain Protocol - Escape Ethereum's Dark Forest</title>
+    <meta name="description" content="MEV bots extracted $1.2B from the Dark Forest. The Black Domain encrypts Ethereum's mempool and ends predatory trading.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Enter the Black Domain">
+    <meta property="og:description" content="Step out of the Dark Forest. End MEV extraction.">
+    <meta property="og:image" content="/assets/og-image.png">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Black Domain">
+    <meta name="twitter:description" content="Encrypting Ethereum's mempool to end the Dark Forest">
+    <meta name="twitter:image" content="/assets/og-image.png">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Space+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navigation">
+        <div class="nav-container">
+            <div class="nav-logo">Black Domain</div>
+            <div class="nav-links">
+                <a href="#problem">The Problem</a>
+                <a href="#solution">The Solution</a>
+                <a href="#how">How It Works</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <canvas id="dark-forest-canvas"></canvas>
+        <div class="hero-content">
+            <h1 class="glitch-text" data-text="Step out of the Dark Forest">
+                Step out of the Dark Forest
+            </h1>
+            <h2 class="fade-in">(you can't sandwich what you can't see)</h2>
+            <div class="stat-ticker">
+                <span class="ticker-label">Value of MEV extracted:</span>
+                <span id="mev-extracted" class="ticker-value">$3,247,892,034</span>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll to learn more</span>
+                <div class="arrow-down"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section id="problem" class="problem-section">
+        <div class="container">
+            <h2 class="section-title">Ethereum is a Dark Forest</h2>
+            <p class="section-subtitle">
+                "[<span class="book-title">The Dark Forest</span> by Cixin Liu] introduces the concept of a "dark forest" — an environment in which detection means certain death at the hands of advanced predators. In this environment, publicly identifying someone else's location is as good as directly destroying them."
+            </p>
+             <p class="section-subtitle">
+                - <a href="https://www.paradigm.xyz/2020/08/ethereum-is-a-dark-forest">Dan Robinson</a>
+            </p>
+            
+            <div class="mev-showcase">
+                <div class="mev-label">MEV Extracted Since The Merge</div>
+                <div class="mev-value-container">
+                    <div class="eth-amount">
+                        <span class="stat-number" data-value="690,318">0</span>
+                        <span class="stat-unit">ETH</span>
+                    </div>
+                    <div class="conversion-arrow">→</div>
+                    <div class="usd-amount" id="mev-usd-value" style="display: none;"></div>
+                </div>
+                <div class="mev-impact">
+                    <p>That's value stolen from users like you</p>
+                    <p>Every swap. Every trade. Every transaction.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section id="solution" class="solution-section">
+        <div class="container">
+            <h2 class="section-title">The Black Domain</h2>
+            <p class="section-subtitle">
+                “But if the Black Domain Plan were to succeed, it would provide the most protection for Earth civilization. Setting aside its effect as a cosmic safety notice, the black domain itself would act as a highly effective protective barrier. .... Thus, a black domain was also dubbed “the cosmic safe.”
+            </p>
+            <p class="section-subtitle">
+                — Excerpt From: Cixin Liu & Ken Liu. <span class="book-title">Death's End</span>
+            </p>
+            
+            
+            <div class="transformation-visual">
+                <div class="before-after-container">
+                    <div class="before">
+                        <h3>Dark Forest (Now)</h3>
+                        <div class="transaction-flow vulnerable">
+                            <div class="tx-step">You Submit</div>
+                            <div class="arrow">→</div>
+                            <div class="tx-step danger">Visible in Mempool</div>
+                            <div class="arrow">→</div>
+                            <div class="tx-step danger">Bots Attack</div>
+                            <div class="arrow">→</div>
+                            <div class="tx-step">You Lose</div>
+                        </div>
+                    </div>
+                    <div class="after">
+                        <h3>Black Domain (Future)</h3>
+                        <div class="transaction-flow protected">
+                            <div class="tx-step">You Submit</div>
+                            <div class="arrow">→</div>
+                            <div class="tx-step safe">Sealed</div>
+                            <div class="arrow">→</div>
+                            <div class="tx-step safe">Ordered Blindly</div>
+                            <div class="arrow">→</div>
+                            <div class="tx-step">Fair Execution</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">🔐</div>
+                    <h3>Encrypted Mempool</h3>
+                    <p>Transactions invisible until confirmed. Even light cannot penetrate a Black Domain.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Commit, Reveal</h3>
+                    <p>Revealed only after ordering. No front-running possible.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">⚖️</div>
+                    <h3>Fair Execution</h3>
+                    <p>True price discovery. No sandwiches. No extraction.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how" class="how-section">
+        <div class="container">
+            <h2 class="section-title">From Prey to Protected</h2>
+            <div class="timeline">
+                <div class="timeline-line"></div>
+                <div class="timeline-step" data-step="1">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Submit Sealed</h3>
+                        <p>A hash of your transaction enters the Black Domain, invisible to all</p>
+                    </div>
+                </div>
+                <div class="timeline-step" data-step="2">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Order Blindly</h3>
+                        <p>Block builders sequence commitments, without seeing contents, based only on transaction fees. FOCIL protects your commitment from censorship.</p>
+                    </div>
+                </div>
+                <div class="timeline-step" data-step="3">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Reveal Fairly</h3>
+                        <p>ePBS enabled delayed execution allows plenty of time for your revealed transaction</p>
+                    </div>
+                </div>
+                <div class="timeline-step" data-step="4">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Execute Safely</h3>
+                        <p>No MEV extraction possible. Your value remains yours.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section id="join" class="join-section">
+        <div class="container">
+            <h2 class="section-title">Build the Black Domain</h2>
+            <p class="section-subtitle">
+                The Dark Forest was never our destination—it was a problem to solve.
+            </p>
+            
+            <div class="audience-cards">
+                <div class="card developers">
+                    <div class="card-icon">👩‍💻</div>
+                    <h3>Developers</h3>
+                    <p>Implement encrypted submission in your dApps and wallets</p>
+                    <a href="https://github.com/black-domain-protocol" class="btn btn-dev">
+                        View Documentation
+                    </a>
+                </div>
+                <div class="card validators">
+                    <div class="card-icon">⚡</div>
+                    <h3>Validators</h3>
+                    <p>Run Black Domain software for sustainable, honest rewards</p>
+                    <a href="#" class="btn btn-val">
+                        Join the Network
+                    </a>
+                </div>
+                <div class="card users">
+                    <div class="card-icon">🛡️</div>
+                    <h3>Users</h3>
+                    <p>Demand protection from every protocol you use</p>
+                    <a href="#" class="btn btn-user">
+                        Sign the Petition
+                    </a>
+                </div>
+            </div>
+            
+            <div class="petition-counter">
+                <p><span id="petition-count">12,847</span> builders have entered the Black Domain</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <blockquote class="footer-quote">
+                "In the Dark Forest, every transaction is prey. 
+                In the Black Domain, every transaction is sovereign."
+            </blockquote>
+            <div class="footer-links">
+                <a href="https://twitter.com/blackdomain">Twitter</a>
+                <a href="https://github.com/black-domain-protocol">GitHub</a>
+                <a href="#">Research Paper</a>
+                <a href="#">Discord</a>
+                <a href="#">Blog</a>
+            </div>
+            <p class="copyright">
+                The Black Domain Protocol - Encrypting Ethereum's Future
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/animations.js"></script>
+</body>
+</html>
