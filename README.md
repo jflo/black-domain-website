@@ -95,7 +95,3 @@ Pull requests welcome! Please follow the existing code style.
 
 ## License
 MIT
-
-## Contact
-- Twitter: [@blackdomain](https://twitter.com/blackdomain)
-- GitHub: [black-domain-protocol](https://github.com/black-domain-protocol)
