@@ -22,6 +22,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Space+Mono&display=swap" rel="stylesheet">
+    <!-- Excalidraw Dependencies -->
+    <link rel="stylesheet" href="https://esm.sh/@excalidraw/excalidraw@0.18.0/dist/dev/index.css" />
+    <script type="importmap">
+      {
+        "imports": {
+          "react": "https://esm.sh/react@18.2.0",
+          "react-dom": "https://esm.sh/react-dom@18.2.0",
+          "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
+          "react/jsx-runtime": "https://esm.sh/react@18.2.0/jsx-runtime"
+        }
+      }
+    </script>
+    <script type="module">
+      import React from "react";
+      import ReactDOM from "react-dom/client";
+      window.React = React;
+      window.ReactDOM = ReactDOM;
+    </script>
 </head>
 <body>
     <!-- Navigation -->
@@ -159,6 +177,30 @@
     <section id="how" class="how-section">
         <div class="container">
             <h2 class="section-title">From Prey to Protected</h2>
+            
+            <!-- Phase Diagrams -->
+            <div class="phase-diagrams">
+                <div class="phase-diagram">
+                    <h3>Phase 1: Transaction Encryption</h3>
+                    <div class="excalidraw-container" data-excalidraw-file="assets/BlackDomainPhase1.excalidraw.excalidraw">
+                        <div class="diagram-placeholder">
+                            <p>⏳ Loading diagram...</p>
+                            <small>Phase 1: Transaction Encryption Flow</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="phase-diagram">
+                    <h3>Phase 2: Execution Protection</h3>
+                    <div class="excalidraw-container" data-excalidraw-file="assets/BlackDomainPhase2.excalidraw.excalidraw">
+                        <div class="diagram-placeholder">
+                            <p>⏳ Loading diagram...</p>
+                            <small>Phase 2: Protected Execution Flow</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
             <div class="timeline">
                 <div class="timeline-line"></div>
                 <div class="timeline-step" data-step="1">
@@ -242,5 +284,6 @@
     </footer>
 
     <script src="js/animations.js"></script>
+    <script type="module" src="js/excalidraw-viewer.js"></script>
 </body>
 </html>

@@ -1,0 +1,13 @@
+{
+  "name": "black-domain-website",
+  "version": "1.0.0",
+  "description": "Marketing website for the Black Domain Protocol - protecting Ethereum users from MEV",
+  "scripts": {
+    "serve": "cd docs && python3 -m http.server 8000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/black-domain-protocol/website"
+  },
+  "license": "MIT"
+}

@@ -6,15 +6,14 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 This is a static marketing website for the Black Domain Protocol - a campaign to encrypt Ethereum's mempool and protect users from MEV extraction. The project uses "Dark Forest" and "Black Domain" metaphors from Liu Cixin's Three Body Problem.
 
 ## Development Setup
-This is a static website project that runs entirely in the browser with no build process required.
+This is a static website project that uses client-side rendering for Excalidraw diagrams.
 
 ```bash
 # Serve locally (if Python is available)
-cd docs
-python -m http.server 8000
+npm run serve
 # Visit http://localhost:8000
 
-# Or simply open the HTML file
+# Or simply open the HTML file (note: Excalidraw diagrams require a web server)
 open docs/index.html
 ```
 
@@ -61,9 +60,10 @@ docs/
 - **Mock API**: Simulated wallet scanning with generated results
 
 ## Deployment
-- **GitHub Pages**: Automatically deploys from `/docs` folder on main branch
+- **GitHub Pages**: Directly serves from `/docs` folder on main branch
 - **Custom Domain**: Add CNAME file to `/docs` directory
-- **No Build Process**: Direct deployment of static files
+- **No Build Process**: Static files with client-side Excalidraw rendering
+- **Excalidraw Viewer**: Automatically renders `.excalidraw` files in the browser
 
 ## Content Updates
 - Statistics: Update `data-value` attributes in HTML
