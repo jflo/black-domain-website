@@ -9,5 +9,13 @@
     "type": "git",
     "url": "https://github.com/black-domain-protocol/website"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "excalidraw": "^0.6.4"
+  },
+  "dependencies": {
+    "js-tokens": "^9.0.1",
+    "loose-envify": "^1.4.0",
+    "react": "^19.1.1"
+  }
 }
